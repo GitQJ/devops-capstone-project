@@ -1,0 +1,30 @@
+[init : remove] Removing all files from /workspace/source ...
+
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + CHECKOUT_DIR=/workspace/output/
+[clone : clone] + '[' true '=' true ]
+[clone : clone] + cleandir
+[clone : clone] + '[' -d /workspace/output/ ]
+[clone : clone] + rm -rf '/workspace/output//*'
+[clone : clone] + rm -rf '/workspace/output//.[!.]*'
+[clone : clone] + rm -rf '/workspace/output//..?*'
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + git config --global --add safe.directory /workspace/output
+[clone : clone] + /ko-app/git-init '-url=https://github.com/GitQJ/devops-capstone-project.git' '-revision=main' '-refspec=' '-path=/workspace/output/' '-sslVerify=true' '-submodules=true' '-depth=1' '-sparseCheckoutDirectories='
+[clone : clone] {"level":"info","ts":1691759211.3880875,"caller":"git/git.go:176","msg":"Successfully cloned https://github.com/GitQJ/devops-capstone-project.git @ 6f5c346e6e4c88e0eb389c9cde2941102e389191 (grafted, HEAD, origin/main) in path /workspace/output/"}
+[clone : clone] {"level":"info","ts":1691759211.5316508,"caller":"git/git.go:215","msg":"Successfully initialized and updated submodules in path /workspace/output/"}
+[clone : clone] + cd /workspace/output/
+[clone : clone] + git rev-parse HEAD
+[clone : clone] + RESULT_SHA=6f5c346e6e4c88e0eb389c9cde2941102e389191
+[clone : clone] + EXIT_CODE=0
+[clone : clone] + '[' 0 '!=' 0 ]
+[clone : clone] + git log -1 '--pretty=%ct'
+[clone : clone] + RESULT_COMMITTER_DATE=1691756447
+[clone : clone] + printf '%s' 1691756447
+[clone : clone] + printf '%s' 6f5c346e6e4c88e0eb389c9cde2941102e389191
+[clone : clone] + printf '%s' https://github.com/GitQJ/devops-capstone-project.git
+
